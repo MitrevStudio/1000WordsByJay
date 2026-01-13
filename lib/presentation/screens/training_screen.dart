@@ -70,14 +70,6 @@ class _TrainingScreenState extends ConsumerState<TrainingScreen> {
   void _submitAnswer() {
     if (_controller.text.trim().isEmpty) return;
 
-    // Check locally if answer is likely correct to decide on auto-advance
-    // We get the current state before submission
-    final currentState = ref.read(trainingStateProvider);
-    final expected = currentState.expectedAnswer?.toLowerCase().trim() ?? '';
-    final actual = _controller.text.toLowerCase().trim();
-    // Simple check - the detailed one in provider handles variants, but for UX flow this is usually enough
-    // or better: Wait for the state update
-
     ref.read(trainingStateProvider.notifier).submitAnswer(_controller.text);
 
     // Ensure keyboard stays open with a slight delay
