@@ -19,10 +19,10 @@ A vocabulary learning app for English-Bulgarian word pairs using a two-level lea
 
 | Platform | Download                                |
 | -------- | --------------------------------------- |
+| Web      | [1000words.mitrevstudio.com](https://1000words.mitrevstudio.com/) |
 | Android  | [Latest APK](../../releases/latest)     |
 | Windows  | [Latest Release](../../releases/latest) |
 | Linux    | [Latest Release](../../releases/latest) |
-| Web      | [Coming Soon]                           |
 
 ### Coming Soon 🍎
 
